@@ -13,7 +13,7 @@ const ProductScrapper = async () => {
       name: product.querySelector('.title')?.innerText.trim(),
       price: parseFloat(product.querySelector('.price')?.innerText.replace('$', '').trim()),
       description: product.querySelector('.description')?.innerText.trim(),
-      rating: parseFloat(product.querySelectorAll('.glyphicon-star').length.toString()),
+      rating: parseFloat(product.querySelectorAll('.ws-icon').length.toString()),
     }));
   });
     console.log(`🔍 Scraped ${Products.length} products.`);
