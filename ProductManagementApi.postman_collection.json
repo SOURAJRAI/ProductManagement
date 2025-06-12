@@ -1,0 +1,201 @@
+{
+	"info": {
+		"_postman_id": "b3fde625-0635-4f25-a2a2-b63431fd2861",
+		"name": "ProductManagementApi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "45800770"
+	},
+	"item": [
+		{
+			"name": "/getProducts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/getProducts?rating=4&sortBy=rating\n\n",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"getProducts"
+					],
+					"query": [
+						{
+							"key": "rating",
+							"value": "4"
+						},
+						{
+							"key": "sortBy",
+							"value": "rating\n\n"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/addProduct",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Asus Gaming",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "$1179.99",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "15.6\\\", Core i5-4200M, 4GB, 500GB, Win7 Pro 64bit",
+							"type": "text"
+						},
+						{
+							"key": "rating",
+							"value": "4",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{baseUrl}}/addProduct",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"addProduct"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/getProductById/684a8274bc4eb2e60bbe7ccc",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/getProductById/684a8274bc4eb2e60bbe7ccc",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"getProductById",
+						"684a8274bc4eb2e60bbe7ccc"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/deleteProduct/684a9521dd1b150ac6966bd7",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Asus Gaming",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "$1179.99",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "15.6\\\", Core i5-4200M, 4GB, 500GB, Win7 Pro 64bit",
+							"type": "text"
+						},
+						{
+							"key": "rating",
+							"value": "4",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{baseUrl}}/deleteProduct/684a9521dd1b150ac6966bd7",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"deleteProduct",
+						"684a9521dd1b150ac6966bd7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/updateProduct/684a9521dd1b150ac6966bd7",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Asus",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "$1200.99",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "15.6\\\", Core i5-4200M, 4GB, 500GB, Win7 Pro 64bit",
+							"type": "text"
+						},
+						{
+							"key": "rating",
+							"value": "4.5",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{baseUrl}}/updateProduct/684a9521dd1b150ac6966bd7",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"updateProduct",
+						"684a9521dd1b150ac6966bd7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/getProductById/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/getProductById/1",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"getProductById",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
